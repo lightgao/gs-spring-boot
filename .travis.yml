@@ -6,3 +6,10 @@ script:
 - test/run.sh
 notifications:
   slack: xhsvm7xb:1rKFtuXZXa77bNdcaPE64pOU
+deploy:
+  provider: heroku
+  api_key:
+    secure: VHYTtDOcfVMB77LMkyawpLrt17HWklXvvVubXS3zEdjmfdFOEIOV5v5f1jD0INSmrLvwrEgyhofCEnKVG55K/lTlbuIYPIKYohsK7fpJlITKhn0/CgrxPMP67MdT0Z74lj8fikuzVq/E7tAM3NHPyr+kL2LJiQ2gNCgVjMj3fQlX5/6BkRrP972l7Onv/XI8WxTeLml2p8oMgmHTzE37E1YE6UMo6EE2JFa6AX0Tr1KjYpxmN7lWQyL6WtCkb8dfZPNgHe4YTxuBra/bEf72zrCY3wl9gLvLmSh31JvhpmT4/iDOWHFLcmWKteQtHExwMoa1j38+wRRdx5bUCQnNjqrmmoSJViHDpNWE9LHzf8+YeYzlsDBe54cxCX4Khc/3CFAAKnrvEOJfWag0j1V9SI0Sv9tbCwA6ghwyBu1v9xh1QMloykCw4qlW8hOAX8qyuEry7+30ralgSMBm++3oVJ6eKa+CQdMfWVfl/Jt1D47Eef+YClqV2gXimPlfv2sLzv00TVhDFuR9uvndDAGTnXf/gikXNGyuWB+Ligw8hWlZDH98nrexiZ9h/PnEJK2AuAbpgP+wDRmZai8Lp5XIL/SMin6La/QgR4fx62voARsXvWB5+y1hlKWxSIZ09sZv0vDIubD7A3hlCrY9BScQZIccXafYdEjLNFZeeHweDkM=
+  app: vast-bayou-38601
+  on:
+    repo: lightgao/gs-spring-boot
