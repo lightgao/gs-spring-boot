@@ -6,3 +6,10 @@ script:
 - travis_script/run.sh
 notifications:
   slack: xhsvm7xb:1rKFtuXZXa77bNdcaPE64pOU
+deploy:
+  provider: heroku
+  api_key:
+    secure: g6XDU4BAnCfj6oYk72CQsfuiyHN1hOkRCWInGAkPz4FGiyv4gD8NADIdWz3eLDAipyxqSX14bpFSPsVxoepw8HbdjxSBEz60bx90QRA3fQ5P+rrBpRy005w0s4MFQ4svAEmGIdS+/tGlLSNC6IM2iF7x53v/hU6Qtl4gmng4p29NpYYYlGggCfeIWpHfXm42A5Ji/WwoVRFxeKrUeeJ2I4mUCJ1qjUhV7AWiCXNhHRJao/myQbrkNIXvVvWazEa4mLEAGfn4mqqlc1+ciq7oJkcAR9CmM+/M/vunQHeFZoUX0FXVm1NmPHbOU9ahK0spOI6exWN9m8B0kB8tRMWq9E1deCaZTGOrQ1UT0qudd2xFhFkES11WEGTdL112PPCXAXxt0pmbP8ryESU1xVQAhRx2Ai9lptXzDtzT10Fu3HV4d7aehdoUUig5hAeEnbjl17/c3oP5RWxZ6Nm/bz+ysGY5UKpzfENZG76snCS8+yQKNNS+AwL9ntQHBXMMfj9iYBUhkG6tsU/EdHYiPEPb98si8s8yF6lzWzVrwdguKTxP5tY5tezmiTJcJomHeFh7T2AevLqaDROLeW3wQRMZm6qjWn3S17Yf4j2C5v0X09dvIkcUYRo/O5EGlUSfm9brmB/Z5HU/jSO/3mqOylLQlTgK1hCHOEDOZ9IsYxMNX6o=
+  app: gs-spring-boot
+  on:
+    repo: lightgao/gs-spring-boot
