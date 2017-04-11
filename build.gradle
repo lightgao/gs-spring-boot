@@ -26,11 +26,15 @@ targetCompatibility = 1.8
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
+
     // tag::actuator[]
     compile("org.springframework.boot:spring-boot-starter-actuator")
     // end::actuator[]
+
+    compile "com.heroku.sdk:heroku-jdbc:0.1.1"
+    compile "org.postgresql:postgresql:9.4-1201-jdbc4"
+
     // tag::tests[]
     testCompile("org.springframework.boot:spring-boot-starter-test")
     // end::tests[]
 }
-
