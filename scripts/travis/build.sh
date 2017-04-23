@@ -1,7 +1,7 @@
 #!/bin/sh
 cd $(dirname $0)
 
-cd ../
+cd ../../
 
 ./gradlew build
 ret=$?

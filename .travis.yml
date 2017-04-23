@@ -3,7 +3,7 @@ language: java
 jdk:
 - oraclejdk8
 script:
-- travis_script/run.sh
+- scripts/travis/build.sh
 notifications:
   slack: xhsvm7xb:1rKFtuXZXa77bNdcaPE64pOU
 deploy:
